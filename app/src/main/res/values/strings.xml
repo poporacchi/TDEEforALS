@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Kotlin</string>
+
+    <string-array name="spiSexItems">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="spiFRS1Items">
+        <item>4: 会話は正常</item>
+        <item>3: 会話障害が認められる</item>
+        <item>2: 繰り返し聞くと意味がわかる</item>
+        <item>1: 声以外の伝達手段と会話を併用</item>
+        <item>0: 実用的会話の喪失</item>
+    </string-array>
+    <string-array name="spiFRS2Items">
+        <item>4: 正常</item>
+        <item>3: 遅い、または書きなぐる</item>
+        <item>2: 一部の単語が判読不可能</item>
+        <item>1: ペンは握れるが字は書けない</item>
+        <item>0: ペンが握れない</item>
+    </string-array>
+    <string-array name="spiFRS3Items">
+        <item>4: 正常</item>
+        <item>3: いくぶん遅く、ぎこちない</item>
+        <item>2: 非常に苦労するが独りで可能</item>
+        <item>1: 寝返りを始めるが独りでできない</item>
+        <item>0: 自分ではどうすることもできない</item>
+    </string-array>
+    <string-array name="spiFRS4Items">
+        <item>4: 正常</item>
+        <item>3: やや歩行が困難</item>
+        <item>2: 補助歩行</item>
+        <item>1: 歩行は不可能</item>
+        <item>0: 脚を動かすことができない</item>
+    </string-array>
+    <string-array name="spiFRS5Items">
+        <item>4: 障害なく正常に着る</item>
+        <item>3: 努力を要するが完全に独りで可能</item>
+        <item>2: 時折、手助けまたは代わりの方法が必要</item>
+        <item>1: 常に手助けが必要</item>
+        <item>0: 全面的に他人に依存</item>
+    </string-array>
+    <string-array name="spiFRS6Items">
+        <item>4: なし</item>
+        <item>3: 歩行中に起こる</item>
+        <item>2: 日常生活（食事、入浴、着替え）で起こる</item>
+        <item>1: 座位や臥床安静時に起こる</item>
+        <item>0: 補助呼吸を考慮する</item>
+    </string-array>
+</resources>
