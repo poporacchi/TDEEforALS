@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         var dbBW: Double?
         var intSumOfFRS: Int = 24
 
-
         adpSex.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         adpFRS1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         adpFRS2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -59,10 +58,10 @@ class MainActivity : AppCompatActivity() {
 
         fun calcFRS (){
             // 選択されているアイテムのIndexを取得
-            val idx: Int = 24 - spiFRS1.getSelectedItemPosition() - spiFRS2.getSelectedItemPosition() - spiFRS3.getSelectedItemPosition() - spiFRS4.getSelectedItemPosition() - spiFRS5.getSelectedItemPosition() - spiFRS6.getSelectedItemPosition()
+            val idxSpinner = 24 - spiFRS1.getSelectedItemPosition() - spiFRS2.getSelectedItemPosition() - spiFRS3.getSelectedItemPosition() - spiFRS4.getSelectedItemPosition() - spiFRS5.getSelectedItemPosition() - spiFRS6.getSelectedItemPosition()
             val txtSumOfFRS = findViewById<TextView>(R.id.txtSumOfFRS)
-            txtSumOfFRS.text = idx.toString()
-            intSumOfFRS = idx
+            txtSumOfFRS.text = idxSpinner.toString()
+            intSumOfFRS = idxSpinner
         }
 
         //スピナーのセレクトイベント設定
@@ -158,7 +157,7 @@ class MainActivity : AppCompatActivity() {
             dbBH = findViewById<EditText>(R.id.etBH).text.toString().toDoubleOrNull()
             dbBW = findViewById<EditText>(R.id.etBW).text.toString().toDoubleOrNull()
 
-            if ((dbBW != null) && (dbBH != null) && (intAge != null)) {
+            if ((dbBW is Double) && (dbBH is Double) && (intAge is Int)) {
                 var dbBEE:Double = 0.0
                 if (idxSex == 0) {
                     //M
