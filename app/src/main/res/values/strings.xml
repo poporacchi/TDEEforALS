@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">Kotlin</string>
-
+    <string name="app_title">TDEE計算</string>
+    <string name="sex_label">性別: </string>
+    <string name="age_label">年齢: </string>
+    <string name="hint_age_et">年齢を入力してください</string>
+    <string name="BH_label">身長: </string>
+    <string name="hint_BH_et">身長(cm)を入力してください</string>
+    <string name="BW_label">体重: </string>
+    <string name="hint_BW_et">体重(kg)を入力してください</string>
+    <string name="FRS6_total_label">ALSFRS6(自動計算): </string>
+    <string name="FRS6_1_label">言語: </string>
+    <string name="FRS6_2_label">書字: </string>
+    <string name="FRS6_3_label">寝床の動作: </string>
+    <string name="FRS6_4_label">歩行: </string>
+    <string name="FRS6_5_label">着衣: </string>
+    <string name="FRS6_6_label">呼吸困難: </string>
+    <string name="btnCalc_label">TDEE計算</string>
+    <string name="instruction_label">※TDEE=BEE(Harris-Benedict)+(55.96xALSFRS-6)-168</string>
     <string-array name="spiSexItems">
         <item>M</item>
         <item>F</item>

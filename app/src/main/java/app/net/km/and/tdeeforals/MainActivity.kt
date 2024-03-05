@@ -9,6 +9,7 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.round
 import android.widget.ArrayAdapter as ArrayAdapter1
 
 class MainActivity : AppCompatActivity() {
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         var intAge: Int?
         var dbBH: Double?
         var dbBW: Double?
-        var intSumOfFRS: Int = 24
+        var intSumOfFRS = 24
 
         adpSex.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         adpFRS1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -150,6 +151,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        fun popCalculation (dbBEE: Double, dbTDEE: Double){
+            AlertDialog.Builder(this)
+                .setTitle("計算結果")
+                .setMessage("BEE: " + round(dbBEE).toString() + "kcal\n" + "TDEE: " + round(dbTDEE).toString() + "kcal")
+                .setPositiveButton("OK", { dialog, id ->
+                    // ボタンクリック時の処理
+                })
+                .show()
+        }
 
         val btnCalc = findViewById<Button>(R.id.btnCalc)
         btnCalc.setOnClickListener {
@@ -158,25 +168,17 @@ class MainActivity : AppCompatActivity() {
             dbBW = findViewById<EditText>(R.id.etBW).text.toString().toDoubleOrNull()
 
             if ((dbBW is Double) && (dbBH is Double) && (intAge is Int)) {
-                var dbBEE:Double = 0.0
-                if (idxSex == 0) {
-                    //M
-                    dbBEE = 66.5 + (13.75 * dbBW!!) + (5.003 * dbBH!!) - (6.775 * intAge!!)
-                } else {
+                if (idxSex != 0) {
                     //F
-                    dbBEE = 66.5 + (13.75 * dbBW!!) + (5.003 * dbBH!!) - (6.775 * intAge!!)
+                    val dbBEE = 66.5 + (13.75 * dbBW!!) + (5.003 * dbBH!!) - (6.775 * intAge!!)
+                    val dbTDEE = dbBEE + (55.96 * intSumOfFRS)
+                    popCalculation(dbBEE, dbTDEE)
+                } else {
+                    //M
+                    val dbBEE = 66.5 + (13.75 * dbBW!!) + (5.003 * dbBH!!) - (6.775 * intAge!!)
+                    val dbTDEE = dbBEE + (55.96 * intSumOfFRS)
+                    popCalculation(dbBEE, dbTDEE)
                 }
-                var dbTDEE:Double = 0.0
-                dbTDEE = dbBEE + (55.96 * intSumOfFRS)
-
-                AlertDialog.Builder(this)
-                    .setTitle("計算結果")
-                    .setMessage("BEE: " + kotlin.math.round(dbBEE).toString() + "kcal\n" + "TDEE: " + kotlin.math.round(dbTDEE).toString() + "kcal")
-                    .setPositiveButton("OK", { dialog, id ->
-                        // ボタンクリック時の処理
-                    })
-                    .show()
-
             }
 
 
