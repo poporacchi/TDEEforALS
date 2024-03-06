@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Kotlin</string>
-    <string name="app_title">TDEE計算</string>
+    <string name="instruction_label">上のボタンをタップして計算</string>
     <string name="sex_label">性別: </string>
     <string name="age_label">年齢: </string>
     <string name="hint_age_et">年齢を入力してください</string>
@@ -16,7 +16,7 @@
     <string name="FRS6_5_label">着衣: </string>
     <string name="FRS6_6_label">呼吸困難: </string>
     <string name="btnCalc_label">TDEE計算</string>
-    <string name="instruction_label">※TDEE=BEE(Harris-Benedict)+(55.96xALSFRS-6)-168</string>
+    <string name="calc_label">※TDEE=BEE(Harris-Benedict)+(55.96xALSFRS-6)-168</string>
     <string-array name="spiSexItems">
         <item>M</item>
         <item>F</item>
@@ -29,7 +29,7 @@
         <item>0: 実用的会話の喪失</item>
     </string-array>
     <string-array name="spiFRS2Items">
-        <item>4: 正常</item>
+        <item>4: 正常に書ける</item>
         <item>3: 遅い、または書きなぐる</item>
         <item>2: 一部の単語が判読不可能</item>
         <item>1: ペンは握れるが字は書けない</item>
@@ -43,7 +43,7 @@
         <item>0: 自分ではどうすることもできない</item>
     </string-array>
     <string-array name="spiFRS4Items">
-        <item>4: 正常</item>
+        <item>4: 正常に歩ける</item>
         <item>3: やや歩行が困難</item>
         <item>2: 補助歩行</item>
         <item>1: 歩行は不可能</item>
