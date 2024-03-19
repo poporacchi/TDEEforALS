@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kotlin</string>
+    <string name="app_name">TDEEforALS</string>
     <string name="instruction_label">上のボタンをタップして計算</string>
     <string name="sex_label">性別: </string>
     <string name="age_label">年齢: </string>

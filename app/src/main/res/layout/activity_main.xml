@@ -25,270 +25,282 @@
         android:layout_gravity="center"
         android:text="@string/instruction_label"
         android:textSize="16sp" />
-    　　
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="2dp">
 
-        <TextView
-            android:id="@+id/txtSexLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sex_label"
-            android:textSize="24sp" />
-
-        <Spinner
-            android:id="@+id/spinnerSex"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="2dp">
-
-        <TextView
-            android:id="@+id/txtAgeLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/age_label"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/etAge"
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_age_et"
-            android:inputType="number"
-            android:maxLength="3"
-            android:maxLines="1"
-            android:selectAllOnFocus="true"
-            android:autofillHints=""
-            android:textSize="24sp" />
-    </LinearLayout>
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="2dp">
+                <TextView
+                    android:id="@+id/txtSexLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex_label"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/txtBHLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BH_label"
-            android:textSize="24sp" />
+                <Spinner
+                    android:id="@+id/spinnerSex"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-        <EditText
-            android:id="@+id/etBH"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:digits="0123456789."
-            android:hint="@string/hint_BH_et"
-            android:inputType="number"
-            android:maxLength="5"
-            android:maxLines="1"
-            android:selectAllOnFocus="true"
-            android:autofillHints=""
-            android:textSize="24sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="2dp">
+                <TextView
+                    android:id="@+id/txtAgeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age_label"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/txtBWLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/BW_label"
-            android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/etAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_age_et"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:autofillHints=""
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-        <EditText
-            android:id="@+id/etBW"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:digits="0123456789."
-            android:hint="@string/hint_BW_et"
-            android:inputType="number"
-            android:maxLength="5"
-            android:maxLines="1"
-            android:selectAllOnFocus="true"
-            android:autofillHints=""
-            android:textSize="24sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="2dp">
+                <TextView
+                    android:id="@+id/txtBHLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BH_label"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/txtFRSLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:text="@string/FRS6_total_label" />
+                <EditText
+                    android:id="@+id/etBH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_BH_et"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:autofillHints=""
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtSumOfFRS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:textStyle="bold"
-            android:textSize="24sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+                <TextView
+                    android:id="@+id/txtBWLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/BW_label"
+                    android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/txtFRS1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_1_label"
-            android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/etBW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789."
+                    android:hint="@string/hint_BW_et"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:selectAllOnFocus="true"
+                    android:autofillHints=""
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-        <Spinner
-            android:id="@+id/spinnerFR1"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-        <TextView
-            android:id="@+id/txtFRS2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_2_label"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/txtFRSLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/FRS6_total_label" />
 
-        <Spinner
-            android:id="@+id/spinnerFR2"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/txtSumOfFRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
 
-        <TextView
-            android:id="@+id/txtFRS3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_3_label"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/txtFRS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_1_label"
+                    android:textSize="24sp" />
 
-        <Spinner
-            android:id="@+id/spinnerFR3"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerFR1"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
 
-        <TextView
-            android:id="@+id/txtFRS4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_4_label"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/txtFRS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_2_label"
+                    android:textSize="24sp" />
 
-        <Spinner
-            android:id="@+id/spinnerFR4"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerFR2"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
 
-        <TextView
-            android:id="@+id/txtFRS5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_5_label"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/txtFRS3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_3_label"
+                    android:textSize="24sp" />
 
-        <Spinner
-            android:id="@+id/spinnerFR5"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerFR3"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
 
-        <TextView
-            android:id="@+id/txtFRS6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FRS6_6_label"
-            android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/txtFRS4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_4_label"
+                    android:textSize="24sp" />
 
-        <Spinner
-            android:id="@+id/spinnerFR6"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog"
-            android:textSize="24sp" />
-    </LinearLayout>
+                <Spinner
+                    android:id="@+id/spinnerFR4"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:layout_gravity="center"
-        android:text="@string/calc_label" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/txtFRS5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_5_label"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFR5"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/txtFRS6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FRS6_6_label"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFR6"
+                    style="@android:style/Widget.Holo.Light.Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_gravity="center"
+                android:text="@string/calc_label" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 
 </LinearLayout>
